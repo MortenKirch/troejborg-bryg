@@ -98,6 +98,109 @@ align-items: center;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling af footer */
+
+footer {
+  background-color: var(--green);
+  width: 100%;
+  bottom: 0;
+}
+.footer,
+.social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: var(--beige);
+}
+
+.social a {
+  font-size: 22px;
+  color: inherit;
+  border: 1px solid var(--beige);
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  margin-top: 1.5rem;
+}
+.social a:hover {
+  opacity: 0.9;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 0.938rem;
+}
+
+.footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+}
+.footer,
+.copyright {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.813rem;
+  color: var(--beige);
+}
+
+/* back to top button */
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  max-width: 40px;
+  height: 40px;
+  width: 100%;
+  font-size: 12px;
+  border-color: rgba(85, 85, 85, 0.2);
+  background-color: var(--black);
+  border-radius: 50%;
+  text-align: center;
+}
+#myBtn a {
+  color:white;
+  font-size: 1.5rem;
+}
+
 /* media query for mobile */
 
 @media screen and (min-width: 390px) and (max-width: 819px) {
@@ -233,6 +336,8 @@ align-items: center;
 
 /* media query for desktop */
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-
+  #myBtn{
+    display: none;
+  }
 
 }
