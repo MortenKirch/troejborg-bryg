@@ -1,0 +1,238 @@
+/* mine root variables */
+:root {
+  --beige: #dfd7b7;
+  --black: #2e2e2e;
+  --white:#ffffff;
+  --green: #304838;
+  --guld:#d88000;
+  --orange:#bf4d00;
+  --brun:#ab7b44;
+  --h1: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset global */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* style af body */
+body {
+  background-color: var(--beige);
+
+}
+a{
+  text-decoration: none;
+  color: var(--black);
+}
+header {
+	display: flex;
+	position: sticky;
+  top: 0;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 2;
+	background: var(--green);
+  width: 100%;
+}
+
+.logo-container {
+display: flex;
+align-items: center;
+}
+.logo-tekst{
+  font-size: 2.5rem;
+  width: auto;
+}
+
+.logo {
+	width: 25%;
+}
+
+.nav-tabs {
+	display: flex;
+	font-size: 1.4rem;
+	list-style: none;
+  
+}
+
+.nav-tab {
+	padding: 10px 25px;
+  box-sizing: border-box;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: var(--beige);
+  box-shadow: -1px 0 2px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0;
+}
+
+.nav-tab.has-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  padding: 10px 25px;
+}
+
+.hidden {
+	display: none;
+}
+
+/* style af overskrift */
+.overskrift{
+  background-image: url(/media/topwavebackground.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 250px; 
+  display: flex;
+  justify-content: center;
+  padding-top: 4%;
+}
+
+
+/* media query for mobile */
+
+@media screen and (min-width: 390px) and (max-width: 819px) {
+
+
+
+
+}
+
+
+
+
+
+/* media query for tablet */
+@media screen and (max-width: 1023px) {
+  .logo-tekst{
+    font-size: 2rem;
+    width: auto;
+  }
+  
+  .logo {
+    width: 15%;
+  }
+    .nav-container {
+      position: fixed;
+      display: none;
+      overflow-y: auto;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 280px;
+      height: 100%;
+      background:var(--beige);
+      box-shadow: -1px 0 2px rgba(0, 0, 0, 0.2);
+    }
+  
+    .nav-tabs {
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 80px;
+      width: 100%;
+    }
+  
+    .nav-tab {
+      padding: 15px 25px;
+    }
+  
+    .menu-btn {
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 20px;
+      height: 15px;
+      cursor: pointer;
+      z-index: 2;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  
+    .menu-btn .menu {
+      display: block;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background: #111;
+      z-index: 2;
+    }
+    .submenu {
+      display: flex;
+      flex-direction: column;
+      position: static;
+      background: var(--beige);
+      box-shadow: none;
+      list-style: none;
+      padding: 0;
+  }
+
+ 
+  .nav-tab.has-submenu:hover .submenu {
+      display: flex;
+  }
+      /* styling af mine 3 spans, gør så at de ændre sig fra burger menu til X */
+    .menu-btn .menu:nth-child(2) {
+      margin-top: 4px;
+      opacity: 1;
+    }
+  
+    .menu-btn .menu:nth-child(3) {
+      margin-top: 4px;
+    }
+  
+    #menu-toggle:checked + .menu-btn .menu {
+      transition: transform 0.2s ease;
+    }
+  
+    #menu-toggle:checked + .menu-btn .menu1 {
+      transform: translate3d(0, 6px, 0) rotate(45deg);
+    }
+  
+    #menu-toggle:checked + .menu-btn .menu2 {
+      opacity: 0;
+    }
+  
+    #menu-toggle:checked + .menu-btn .menu3 {
+      transform: translate3d(0, -6px, 0) rotate(-45deg);
+    }
+  
+      /* navigationsbar slide in */
+    #menu-toggle:checked ~ .nav-container {
+      z-index: 1;
+      display: flex;
+      animation: menu-slide-left 0.5s ease;
+    }
+    @keyframes menu-slide-left {
+      0% {
+        transform: translateX(200px);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+
+
+
+
+
+
+
+  }
+
+
+
+/* media query for desktop */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+
+}
