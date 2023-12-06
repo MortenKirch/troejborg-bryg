@@ -30,7 +30,8 @@ a{
   text-decoration: none;
   color: var(--black);
 }
-
+/* ********************************************************************************************************** */
+/* ********************************************************************************************************** */
 /* start style af min navbar  */
 header {
 	display: flex;
@@ -100,7 +101,8 @@ align-items: center;
   justify-content: center;
   padding-top: 3%;
 }
-
+/* ********************************************************************************************************** */
+/* ********************************************************************************************************** */
 /* style af forside sektion */
 .forside-sektion{
   
@@ -264,7 +266,61 @@ transform: scale(1.5);
 transform: scale(1.5);
 }
 
+/* ********************************************************************************************************** */
+/* ********************************************************************************************************** */
+/* start style af produkter.html */
 
+.produkt{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+
+}
+.billede-af-produkt{
+  height: 20rem;
+  width: fit-content;
+  transform:translateX(50px);
+}
+.produkt-kort{
+  display: flex;
+}
+
+.produkt-beskrivelse{
+  margin-left: 20%;
+}
+.humle-sort{
+  margin-left: 20%;
+  margin-right: auto;
+}
+.alkohol-procent{
+margin-left: 20%;
+margin-right: auto;
+}
+.køb-knap{
+  width: 30%;
+  height: 15%;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  transform: translate(40px, 40px);
+}
+
+/* start style til cssgrid af produkterne */
+
+.produkt-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+  margin-right: 5%;
+  }
+  
+ 
+
+/* ********************************************************************************************************** */
+/* ********************************************************************************************************** */
 
 /* Styling af footer */
 
@@ -330,7 +386,8 @@ footer {
   font-size: 0.813rem;
   color: var(--beige);
 }
-
+/* ********************************************************************************************************** */
+/* ********************************************************************************************************** */
 /* back to top button */
 #myBtn {
   position: fixed;
@@ -431,6 +488,8 @@ footer {
   .nav-tab.has-submenu:hover .submenu {
       display: flex;
   }
+
+  
       /* styling af mine 3 spans, gør så at de ændre sig fra burger menu til X */
     .menu-btn .menu:nth-child(2) {
       margin-top: 4px;
@@ -471,12 +530,48 @@ footer {
         transform: translateX(0);
       }
     }
+    .produkt-section {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 40px;
+      margin-right: 5%;
+      }
+    .køb-knap{
+      font-size: 1rem;
+    }
+
+  }
+
+  @media screen and (max-width: 810px) {
+    .produkt-section {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 40px;
+      margin-right: 5%;
+      }
+
+
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .billede-af-produkt{
+      height: 15rem;
+      width: fit-content;
+      transform:translateX(40px);
+    }
+
+    .køb-knap{
+      transform: translate(40px, 20px);
+    }
+
+
+
+
 
 
 
   }
-
-
 
 /* media query for desktop */
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
