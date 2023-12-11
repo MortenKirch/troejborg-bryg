@@ -470,12 +470,6 @@ button:hover {
 
 
 /* Styling af footer */
-
-*{
-  margin: 0;
-  padding: 0;
-}
-
 footer {
 background-color: var(--green);
   width: 100%;
