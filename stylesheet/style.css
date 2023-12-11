@@ -532,6 +532,9 @@ color: var(--beige);
 .social a:hover {
   opacity: 0.9;
 }
+footer{
+  margin-top: 2rem;
+}
 .kontakt-os-socials{
  text-align: left;
   padding: 0;
