@@ -126,22 +126,27 @@ margin-top: -50px;
   .humle { 
       grid-area: 1 / 3 / 2 / 4;
     z-index: 2;
+    transform: translateX(-1.5rem);
   }
   .hvede { 
       grid-area: 2 / 3 / 3 / 4;
     z-index: 2;
+    transform: translateX(-1.5rem);
   }
   .vand { 
       grid-area: 3 / 3 / 4 / 4;
     z-index: 2;
+    transform: translateX(1.5rem);
   }
   .gaer { 
       grid-area: 4 / 3 / 5 / 4;
     z-index: 2;
+    transform: translateX(3.5rem);
   }
   .hemmelig { 
       grid-area: 5 / 3 / 6 / 4;
     z-index: 2;
+    transform: translateX(2rem);
   }
 
 .infograpic-ikoner{
@@ -306,6 +311,7 @@ background-color: var(--green);
 .humle-sort{
   margin-left: 20%;
   margin-right: auto;
+  width: 100%;
 }
 .alkohol-procent{
 margin-left: 20%;
@@ -346,13 +352,13 @@ margin-right: auto;
 
 }
 .historien-bag-figure{
-  display: flex;
+  display: grid;
   max-width: 80%;
-
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
 }
 .historien-bag-billede{
-  max-width: 40%;
-  height: auto;
+  max-width: 100%;
 }
 .historien-bag-tekst{
   margin-right: 2rem;
@@ -646,10 +652,15 @@ grid-template-rows: repeat(2, 0.5fr);
   font-size: 1.2rem;
 }
 .historien-bag-figure{
-  flex-direction: column;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.25fr;
 }
 .historien-bag-billede{
   max-width: 100%;
+  grid-area: 2 / 1 / 3 / 2;
+}
+.historien-bag-tekst{
+  grid-area: 1 / 1 / 2 / 2;
 }
 .infographic-om-os{
   display: none;
@@ -791,7 +802,18 @@ grid-row-gap: 20px;
   .forside-infograpic-tekst-5{
     grid-area: 5/1/6/2;
   }
-
+/* styling af om os siden */
+.historien-bag-figure{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.historien-bag-billede{
+  max-width: 100%;
+  grid-area: 2 / 1 / 3 / 2;
+}
+.historien-bag-tekst{
+  grid-area: 1 / 1 / 2 / 2;
+}
 /* styling af produkter */
     .produkt-section {
       grid-template-columns: repeat(2, 1fr);
