@@ -1,0 +1,201 @@
+/* mine root variables */
+:root {
+    --beige: #dfd7b7;
+    --black: black;
+    --white:#f5f5f5;
+    --green: #304838;
+    --guld:#d88000;
+    --orange:#bf4d00;
+    --brun:#ab7b44;
+    --h1: 3rem;
+    --h2: 2rem;
+  }
+  
+  /* Reset global */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    
+  }
+  h1{
+    font-size: var(--h1);
+    margin: 2rem;
+  }
+  h2{
+    font-size: var(--h2);
+    margin: 2rem;
+  }
+  p{
+    font-size: 1.3rem;
+  }
+  /* style af body */
+  body {
+    background-color: var(--beige);
+    
+  }
+  /* style af anchors */
+  a{
+    text-decoration: none;
+    color: var(--beige);
+  }
+  
+  /* ********************************************************************************************************** */
+  /* ********************************************************************************************************** */
+  /* style af forside sektion */
+  .forside-sektion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-size: 1.4rem;
+  }
+  .forside-tekst{
+    grid-area: 1 / 1 / 6 / 2;
+    max-width: 100%;
+    margin-left: 5%;
+  }
+
+  .forside-billede-1{
+    grid-area: 1 / 2 / 6 / 3;
+    max-width: 500px;
+   
+  }
+  
+  /* style af infograpic 1 */
+
+   
+   
+    .humle { 
+        grid-area: 1 / 3 / 2 / 4;
+      z-index: 2;
+    }
+    .hvede { 
+        grid-area: 2 / 3 / 3 / 4;
+      z-index: 2;
+    }
+    .vand { 
+        grid-area: 3 / 3 / 4 / 4;
+      z-index: 2;
+    }
+    .gaer { 
+        grid-area: 4 / 3 / 5 / 4;
+      z-index: 2;
+    }
+    .hemmelig { 
+        grid-area: 5 / 3 / 6 / 4;
+      z-index: 2;
+    }
+  
+  .infograpic-ikoner{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+  
+    }
+  
+    .ol { 
+      grid-area: 1 / 3 / 6 / 4;
+      justify-self: end;
+      max-width: 60%;
+    }
+    .forside-infograpic-tekst h2{
+        margin: 0;
+    }
+    .forside-infograpic-tekst-1{
+      grid-area: 1/2/2/3;
+    }
+    .forside-infograpic-tekst-2{
+      grid-area: 2/2/3/3;
+    }
+    .forside-infograpic-tekst-3{
+      grid-area: 3/2/4/3;
+    }
+    .forside-infograpic-tekst-4{
+      grid-area: 4/2/5/3;
+    }
+    .forside-infograpic-tekst-5{
+      grid-area: 5/2/6/3;
+    }
+    .forside-infograpic-tekst{
+      align-self: center;
+      border: 5px solid;
+      max-width: 25rem;
+      background-color: var(--beige);
+      height: 100px;
+      font-size: 0.8rem;
+      border-radius: 1rem;
+    }
+  
+  
+  
+    #humle-tekst{
+      visibility: hidden;
+  }
+  #humle:hover ~ #humle-tekst{
+      visibility: visible;
+      transform: scale(1.5);
+        
+    
+
+    }
+  
+  #humle:hover{
+    transform: scale(1.5);
+  
+  }
+  
+  #hvede-tekst{
+    visibility: hidden;
+  }
+  #hvede:hover ~ #hvede-tekst{
+    visibility: visible;
+    transform: scale(1.5);
+  
+  }
+  
+  #hvede:hover{
+  transform: scale(1.5);
+  }
+  
+  
+  #vand-tekst{
+    visibility: hidden;
+  }
+  #vand:hover ~ #vand-tekst{
+    visibility: visible;
+    transform: scale(1.5);
+  
+  }
+  
+  #vand:hover{
+  transform: scale(1.5);
+  }
+  
+  #gaer-tekst{
+    visibility: hidden;
+  }
+  #gaer:hover ~ #gaer-tekst{
+    visibility: visible;
+    transform: scale(1.5);
+  
+  }
+  
+  #gaer:hover{
+  transform: scale(1.5);
+  }
+  
+  #hemmelig-tekst{
+    visibility: hidden;
+  }
+  #hemmelig:hover ~ #hemmelig-tekst{
+    visibility: visible;
+    transform: scale(1.5);
+  
+  }
+  
+  #hemmelig:hover{
+  transform: scale(1.5) ;
+  }
+
