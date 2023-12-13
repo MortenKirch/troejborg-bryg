@@ -7,8 +7,7 @@
   --guld:#d88000;
   --orange:#bf4d00;
   --brun:#ab7b44;
-  --h1: 3rem;
-  --h2: 2rem;
+
 }
 
 /* Reset global */
@@ -19,11 +18,11 @@
   
 }
 h1{
-  font-size: var(--h1);
+  font-size: 3rem;
   margin: 2rem;
 }
 h2{
-  font-size: var(--h2);
+  font-size: 2rem;
   margin: 2rem;
 }
 p{
@@ -580,8 +579,11 @@ footer{
   body{
     margin-top: -10rem;
   }
-  h2{
+  h1{
     font-size: 1.5rem;
+  }
+  h2{
+    font-size: 1.2rem;
   }
 /* Styling af produkter */
   .produkt-section {
