@@ -109,7 +109,7 @@ margin-top: -50px;
 .forside-tekst{
   grid-area: 1 / 1 / 6 / 2;
   max-width: 100%;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 .forside-billede-1{
@@ -164,6 +164,9 @@ margin-top: -50px;
   }
   .forside-infograpic-tekst h2{
       margin: 0;
+  }
+  .forside-infograpic-tekst{
+    padding: 0.5rem;
   }
   .forside-infograpic-tekst-1{
     grid-area: 1/2/2/3;
@@ -537,7 +540,9 @@ color: var(--beige);
 }
 footer{
   margin-top: 2rem;
+  padding-bottom: 1rem;
 }
+
 .kontakt-os-socials{
  text-align: left;
   padding: 0;
@@ -977,21 +982,28 @@ grid-row-gap: 20px;
 
 
     /* styling af mine 3 spans, gør så at de ændre sig fra burger menu til X */
+    .menu-btn .menu:nth-child(1){
+      background-color: var(--beige)
+    }
   .menu-btn .menu:nth-child(2) {
     margin-top: 4px;
     opacity: 1;
+    background-color: var(--beige);
   }
 
   .menu-btn .menu:nth-child(3) {
     margin-top: 4px;
+    background-color: var(--beige);
   }
 
   #menu-toggle:checked + .menu-btn .menu {
     transition: transform 0.2s ease;
+    background-color: var(--black);
   }
 
   #menu-toggle:checked + .menu-btn .menu1 {
     transform: translate3d(0, 6px, 0) rotate(45deg);
+    background-color: var(--black);
   }
 
   #menu-toggle:checked + .menu-btn .menu2 {
