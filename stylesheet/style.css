@@ -102,8 +102,6 @@ margin-top: -50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   font-size: 1.4rem;
 }
 .forside-tekst{
