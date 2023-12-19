@@ -1,0 +1,3 @@
+sitemap: http://trojborg-bryg.mortenkirch.dk/sitemap.xml
+User-agent: *
+allow: /
